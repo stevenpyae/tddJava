@@ -13,7 +13,7 @@ public class ShoppingBasket {
 
 	public double getTotal() {
 		// TODO Auto-generated method stub
-		return items.stream().mapToDouble(item -> item.getUnitPrice()).sum();
+		return items.stream().mapToDouble(item -> item.getSubTotal()).sum();
 	}
 
 }

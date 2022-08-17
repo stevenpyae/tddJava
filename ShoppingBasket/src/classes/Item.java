@@ -11,9 +11,8 @@ public class Item {
 		this.quantity = quantity;
 	}
 
-	public double getUnitPrice() {
-		// TODO Auto-generated method stub
-		return this.unitPrice;
+	double getSubTotal() {
+		return this.unitPrice* (double) this.quantity;
 	}
 
 }
