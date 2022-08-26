@@ -24,6 +24,11 @@ public class DonateMovieTest {
 		
 		assertTrue(library.contains(movie));
 		//test should have one reason to fail
+		
+	}
+	@Test
+	public void rentalCopyAdded() {
+		library.donate(movie);
 		assertEquals(1, movie.getCopies());
 	}
 
