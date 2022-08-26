@@ -11,14 +11,15 @@ import classes.Movie;
 public class DonateMovieTest {
 	
 	private Library library;
+	private Movie movie;
 
 	public DonateMovieTest() {
 		library = new Library();
+		movie = new Movie();
 	}
 
 	@Test
 	public void donateMovie() {
-		Movie movie = new Movie();
 		library.donate(movie);
 		
 		assertTrue(library.contains(movie));
