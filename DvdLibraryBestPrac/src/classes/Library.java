@@ -5,7 +5,7 @@ import java.util.Collection;
 
 public class Library {
 
-	private ArrayList<Movie> catalogue = new ArrayList<>();
+	private Collection<Movie> catalogue = new ArrayList<>();
 
 
 
@@ -17,7 +17,7 @@ public class Library {
 	}
 
 	public boolean contains(Movie movie) {
-		return ((Collection<Movie>) catalogue).contains(movie);
+		return catalogue.contains(movie);
 	}
 
 }
