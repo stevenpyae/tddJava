@@ -19,7 +19,7 @@ public class DonateMovieTest {
 	}
 
 	@Test
-	public void donateMovie() {
+	public void movieAddedToCatalogue() {
 		library.donate(movie);
 		
 		assertTrue(library.contains(movie));
