@@ -11,7 +11,7 @@ public class DonateMovieTest {
 	
 	@Test
 	public void donateMovie() {
-		//Start by asking the question that we want to ask
+		//Start by asking the question that we want to ask, then reference it. 
 		Library library = new Library();
 		Movie movie = new Movie();
 		library.donate(movie);
