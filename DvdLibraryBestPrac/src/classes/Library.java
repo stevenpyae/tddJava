@@ -7,10 +7,7 @@ public class Library {
 
 	private ArrayList<Movie> catalogue = new ArrayList<>();
 
-	public Collection<Movie> getCatalogue() {
-		// TODO Auto-generated method stub
-		return catalogue;
-	}
+
 
 	public void donate(Movie movie) {
 		// TODO Auto-generated method stub
@@ -20,7 +17,7 @@ public class Library {
 	}
 
 	public boolean contains(Movie movie) {
-		return getCatalogue().contains(movie);
+		return ((Collection<Movie>) catalogue).contains(movie);
 	}
 
 }
