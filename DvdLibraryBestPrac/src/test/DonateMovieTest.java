@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -17,11 +18,8 @@ public class DonateMovieTest {
 		Movie movie = new Movie();
 		library.donate(movie);
 		
-		assertTrue(contains(library, movie));
-	}
-
-	private boolean contains(Library library, Movie movie) {
-		return library.getCatalogue().contains(movie);
+		assertTrue(library.contains(movie));
+		assertEquals(1, movie.getCopies());
 	}
 
 }

@@ -15,7 +15,12 @@ public class Library {
 	public void donate(Movie movie) {
 		// TODO Auto-generated method stub
 		catalogue.add(movie);
+		movie.addCopy();
 		
+	}
+
+	public boolean contains(Movie movie) {
+		return getCatalogue().contains(movie);
 	}
 
 }
