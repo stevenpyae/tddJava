@@ -17,7 +17,11 @@ public class DonateMovieTest {
 		Movie movie = new Movie();
 		library.donate(movie);
 		
-		assertTrue(library.getCatalogue().contains(movie));
+		assertTrue(contains(library, movie));
+	}
+
+	private boolean contains(Library library, Movie movie) {
+		return library.getCatalogue().contains(movie);
 	}
 
 }
