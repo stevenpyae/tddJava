@@ -12,6 +12,7 @@ public class DonateMovieTest {
 	@Test
 	public void donateMovie() {
 		//Start by asking the question that we want to ask, then reference it. 
+		//Point 1: Work backwards from the assertions
 		Library library = new Library();
 		Movie movie = new Movie();
 		library.donate(movie);
